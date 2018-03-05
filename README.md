@@ -1,5 +1,5 @@
 # formation complete developpeur web
-## Formation de John Codeur
+## Formation de John Codeur sur Udemy
 
 Cette formation sera présentée uniquement sur un seul répository.
 Les sections seront représentées par des répertoires individuels. Il y a 2 répertoires créés à la base.
