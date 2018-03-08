@@ -1,7 +1,15 @@
+ body {
+     padding: 10px 30px;
+ }
+ 
  img {
      width: 100%;
      max-width: 400px;
      height: auto;
+ }
+ 
+ #section3 {
+     background-color: #dda0dd;
  }
  
  .bloc-titre {
@@ -25,4 +33,34 @@
  p {
      font-family: Arial;
      color: chocolate;
+ }
+ 
+ a {
+     color: green;
+ }
+ 
+ a:hover {
+     color: yellow;
+     text-decoration: red underline;
+ }
+ 
+ a:visited {
+     color: blue;
+ }
+ 
+ aside {
+     background-color: aquamarine;
+ }
+ 
+ aside article:last-child {
+     width: 100%;
+     max-width: 600px;
+     background-color: bisque;
+     margin: 30px auto;
+     border: 3px dotted red;
+ }
+ 
+ aside article p:first-child {
+     color: blue;
+     padding: 50px;
  }
