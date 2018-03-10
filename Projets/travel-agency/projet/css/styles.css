@@ -35,6 +35,16 @@ a {
     text-decoration: none;
 }
 
+.overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px 0px 0px 10px;
+    width: 50%;
+    padding: 20px;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: baseline;
+}
+
 header {
     height: auto;
     display: flex;
@@ -79,6 +89,11 @@ p {
     color: #777;
 }
 
+small {
+    font-size: 13px;
+    font-style: italic;
+}
+
 .orange {
     color: #ff7100;
 }
@@ -96,13 +111,16 @@ button:hover {
     background-color: #02d8dd;
 }
 
+section {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #main-image {
     height: 525px;
     background: url('../img/main.jpg') center;
-    width: 100%;
-    flex-direction: row;
     align-items: stretch;
-    justify-content: center;
 }
 
 #main-image .container {
@@ -117,10 +135,8 @@ button:hover {
 
 #steps {
     display: flex;
-    padding: 80px 0px;
+    padding: 40px 0px;
 }
-
-#steps .container {}
 
 #steps article {
     padding: 140px 10px 0px 10px;
@@ -147,6 +163,45 @@ button:hover {
 #steps h4 {
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+#possibilities {
+    display: flex;
+    padding: 40px 0px;
+    background-color: #efefef;
+}
+
+#possibilities article {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    min-height: 270px;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+#possibilities h4 {
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#possibilities p {
+    text-align: center;
+}
+
+#possibilities .button {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 6px 20px;
+    height: auto;
+}
+
+#possibilities .button:hover {
+    background-color: #02d8dd;
 }
 
 @media only screen and (min-width: 768px) {
@@ -178,8 +233,14 @@ button:hover {
     #main-image .container {
         flex-direction: column;
     }
-    #steps .container {
+    #steps .container,
+    #possibilities .container {
         flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    #possibilities article {
+        width: 48%;
+        margin-bottom: 0px;
     }
 }
 
